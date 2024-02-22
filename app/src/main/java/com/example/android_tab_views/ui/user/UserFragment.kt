@@ -35,15 +35,15 @@ class UserFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val inflate = inflater.inflate(R.layout.user_fragment, container, false)
+       // val inflate = inflater.inflate(R.layout.user_fragment, container, false)
 
         //Insert Code. . .
         _binding = UserFragmentBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        binding.textView.text = "This is a cool textView"
+        binding.userText.text = "This is a cool textView"
 
-        return inflate
+        return root
     }
 
 
